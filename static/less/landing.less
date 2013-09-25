@@ -1,0 +1,266 @@
+.rounded(@radius: 2px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.flat-font {
+	font-family: "Flat-UI-Icons";
+	font-size: 23.996px;
+	font-style: normal;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+.w1 {
+	width: 200px;
+}
+
+#topbar {
+	margin: 30px 0;
+	position: relative;
+
+	.logo {
+		max-width: 100px;
+	}
+
+	.tagline {
+		font-style: italic;
+		line-height: 35px;
+	}
+
+	.signup {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	@media (max-width: 480px) {
+
+		.logo {
+			margin-top: 10px;
+			max-width: 60px;
+		}
+
+		.tagline {
+			margin-top: 20px;
+		}
+	}
+}
+
+#persons {
+	margin-top: 10px;
+	height: 280px;
+	background-image: url('/static/assets/people.jpg');
+	background-size: cover;
+}
+
+#blueline {
+	background-color: rgb(56, 162, 222);
+	padding: 20px 0;
+	color: #fff;
+
+	h6 {
+		font-size: 130%;
+		text-transform: uppercase;
+	}
+}
+
+#logoline {
+	margin-top: 40px;
+
+	img {
+		width: 130px;
+	}
+}
+
+#bulletpoints {
+
+	.media {
+		margin-top: 40px;
+
+		.media-object {
+			width: 80px;
+		}
+
+		.media-body {
+
+			.media-heading {
+				font-size: 120%;
+			}
+		}
+	}
+}
+
+#howWorks {
+	background-color: rgb(246, 246, 246);
+	margin-top: 60px;
+	padding: 20px 0;
+
+	header {
+		padding: 10px;
+	}
+
+	.boxes {
+
+		.row-fluid {
+			width: 95%;
+			margin: 0 auto;
+		}
+
+		.box {
+			background-color: #fff;
+			height: 460px;
+			border: 2px solid rgb(241, 196, 15);
+			.rounded(10px);
+			padding: 15px;
+
+			&.color1 {
+				border-color: rgb(241, 196, 39);
+			}
+
+			&.color2 {
+				border-color: rgb(75, 189, 157);
+			}
+
+			&.color3 {
+				border-color: rgb(231, 76, 60);
+			}
+		}
+
+		.content {
+			height: 220px;
+
+			p {
+				font-size: 99%;
+			}
+		}
+	}
+}
+
+#pricing {
+	background-color: rgb(246, 246, 246);
+	margin-top: 60px;
+	padding-top: 20px;
+
+	.boxes {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+
+	.box {
+
+		&.color1 {
+			background-color: rgb(241, 196, 39);
+
+			.head {
+				background-color: rgb(242, 157, 39);
+			}
+		}
+
+		&.color2 {
+			background-color: rgb(75, 189, 157);
+
+			.head {
+				background-color: rgb(64, 161, 134);
+			}
+		}
+
+		&.color3 {
+			background-color: rgb(52, 152, 220);
+
+			.head {
+				background-color: rgb(43, 128, 185);
+			}
+		}
+
+		.head {
+			color: #fff;
+			padding: 20px 10px;
+
+			h6 {
+				margin: 0;
+				padding: 0;
+			}
+
+			.left {
+				float: left;
+			}
+
+			.right {
+				float: right;
+			}
+		}
+
+		p {
+			margin: 20px 0;
+		}
+
+		ul {
+			padding: 0 5px 10px;
+			li {
+				list-style-image: url('/static/assets/tick.png');
+			}
+		}
+
+	}
+
+	.box-footer {
+		background-color: rgb(155, 89, 182);
+		margin: 20px 0;
+		padding: 10px;
+		color: #fff;
+	}
+}
+
+#dashboard {
+	margin-top: 60px;
+
+	p {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	img {
+		margin-top: 20px;
+	}
+}
+
+#legal {
+	background-color: rgb(64, 64, 64);
+	padding: 10px;
+
+	ul {
+		li {
+			display: inline;
+			list-style-type: none;
+			padding-right: 20px;
+			text-transform: uppercase;
+
+			a {
+				color: #fff;
+			}
+		}
+	}
+
+	.small {
+		font-size: 90%;
+	}
+}
+
+#footer {
+	padding: 20px;
+
+	span {
+		line-height: 48px;
+	}
+}
