@@ -43,6 +43,8 @@ class CustomerManager(models.Manager):
                     last_name = split[-1]
                     if len(split) > 2:
                         middle_name = " ".join(split[1:-1])
+                else:
+                    first_name=name
                 #date_of_birth = datetime.datetime.strptime(dob, '%m/%d/%Y')
                 date_of_birth = dob
             except:

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/vendors/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/vendors/mchimp.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/views/main.py" afterPath="$PROJECT_DIR$/main/views/home.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/__init__.py" afterPath="$PROJECT_DIR$/main/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keen/basesettings.py" afterPath="$PROJECT_DIR$/keen/basesettings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" afterPath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keen/urls.py" afterPath="$PROJECT_DIR$/keen/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="keen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,6 +36,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="31" selection-start="3010" selection-end="3010" vertical-scroll-proportion="0.8088065" vertical-offset="442" max-vertical-offset="1725">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/views/home.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdo_signup.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mdo_signup.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="42" selection-start="4219" selection-end="4219" vertical-scroll-proportion="0.12395709" vertical-offset="1336" max-vertical-offset="2670">
+            <state line="96" column="42" selection-start="4219" selection-end="4219" vertical-scroll-proportion="-4.3333335" vertical-offset="1336" max-vertical-offset="2670">
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -110,8 +112,8 @@
         <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
         <option value="$PROJECT_DIR$/keen/basesettings.py" />
         <option value="$PROJECT_DIR$/main/views/home.py" />
-        <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/main/vendors/mchimp.py" />
+        <option value="$PROJECT_DIR$/main/models.py" />
       </list>
     </option>
   </component>
@@ -618,11 +620,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="49" selection-start="4297" selection-end="4297" vertical-scroll-proportion="0.8609502" vertical-offset="832" max-vertical-offset="1695">
+        <state line="96" column="42" selection-start="4219" selection-end="4219" vertical-scroll-proportion="-4.3333335" vertical-offset="1336" max-vertical-offset="2670">
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,11 +647,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
+    <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="42" selection-start="4219" selection-end="4219" vertical-scroll-proportion="0.12395709" vertical-offset="1336" max-vertical-offset="2670">
+        <state line="76" column="31" selection-start="3010" selection-end="3010" vertical-scroll-proportion="0.8088065" vertical-offset="442" max-vertical-offset="1725">
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
