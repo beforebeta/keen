@@ -46,6 +46,7 @@ class CustomerManager(models.Manager):
                 else:
                     first_name=name
                 #date_of_birth = datetime.datetime.strptime(dob, '%m/%d/%Y')
+                print "date of birth", dob
                 if dob:
                     date_of_birth = dob
             except:
