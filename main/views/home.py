@@ -44,6 +44,10 @@ def mdo_signup(request):
         try:
             phone = form.cleaned_data["phone"].strip()
         except: pass
+        if phone == "Phone":
+            phone = ""
+        if name == "Name*":
+            name= ""
         customer = Customer.objects.add_new_signup("mdo","signup",name,email,dob,phone)
         if customer:
             Mailchimp().subscribe(settings.MDO_MAILCHIMP_LIST_ID, customer)
