@@ -1,9 +1,9 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
+from django.contrib import admin
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+admin.autodiscover()
 
 # urlpatterns = patterns('keen.views',
 #     url(r'^$', 'index'),
@@ -16,12 +16,13 @@ from django.views.generic import TemplateView
 # )
 
 urlpatterns = patterns('',
+    url(r'^admin/', include(admin.site.urls)),
     (r'^$', TemplateView.as_view(template_name='index.html')),
     (r'^legal$', TemplateView.as_view(template_name='legal.html')),
 )
 
 #mdo special case
-urlpatterns += patterns('main.views.main',
+urlpatterns += patterns('main.views.home',
     url(r'^mdo/signup/$', 'mdo_signup'),
 )
 

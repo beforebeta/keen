@@ -127,6 +127,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
     'south',
     'main'
     # Uncomment the next line to enable the admin:
@@ -195,3 +196,9 @@ LOGGING = {
 }
 
 APPEND_SLASH=True
+
+MAILCHIMP_API_KEY = "4f1edbb00b9d47197be82bb7007c1b6d-us7"
+
+
+#CLIENT SPECIFIC
+MDO_MAILCHIMP_LIST_ID = "f137682258"
