@@ -1,4 +1,4 @@
-from django.conf.urls import patterns
+from django.conf.urls import patterns, include, url
 from django.views.generic import TemplateView
 
 # Uncomment the next two lines to enable the admin:
@@ -19,3 +19,10 @@ urlpatterns = patterns('',
     (r'^$', TemplateView.as_view(template_name='index.html')),
     (r'^legal$', TemplateView.as_view(template_name='legal.html')),
 )
+
+#mdo special case
+urlpatterns += patterns('main.views.main',
+    url(r'^mdo/signup/$', 'mdo_signup'),
+)
+
+
