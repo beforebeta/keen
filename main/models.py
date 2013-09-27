@@ -46,7 +46,8 @@ class CustomerManager(models.Manager):
                 else:
                     first_name=name
                 #date_of_birth = datetime.datetime.strptime(dob, '%m/%d/%Y')
-                date_of_birth = dob
+                if dob:
+                    date_of_birth = dob
             except:
                 print_stack_trace()
             new_customer = self.model(full_name=name,
