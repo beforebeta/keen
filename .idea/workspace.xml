@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" afterPath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/vendors/mchimp.py" afterPath="$PROJECT_DIR$/main/vendors/mchimp.py" />
     </list>
     <ignored path="keen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="signup_thanks.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html">
+      <file leaf-file-name="mdo_signup.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="122" column="20" selection-start="5359" selection-end="5359" vertical-scroll-proportion="-13.0" vertical-offset="1518" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdo_signup.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
+      <file leaf-file-name="mchimp.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="40" selection-start="6012" selection-end="6012" vertical-scroll-proportion="0.64004767" vertical-offset="1518" max-vertical-offset="2670">
+            <state line="21" column="88" selection-start="882" selection-end="882" vertical-scroll-proportion="0.33024335" vertical-offset="0" max-vertical-offset="863">
               <folding />
             </state>
           </provider>
@@ -74,9 +74,9 @@
         <option value="$PROJECT_DIR$/main/vendors/__init__.py" />
         <option value="$PROJECT_DIR$/keen/basesettings.py" />
         <option value="$PROJECT_DIR$/main/views/home.py" />
-        <option value="$PROJECT_DIR$/main/vendors/mchimp.py" />
         <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
+        <option value="$PROJECT_DIR$/main/vendors/mchimp.py" />
       </list>
     </option>
   </component>
@@ -527,15 +527,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../env/keen/lib/python2.7/site-packages/django/forms/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="506" selection-end="506" vertical-scroll-proportion="0.3163152" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="e#279#317#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../env/keen/lib/python2.7/site-packages/django/forms/fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="185" column="8" selection-start="7139" selection-end="7139" vertical-scroll-proportion="0.33333334" vertical-offset="2404" max-vertical-offset="15255">
@@ -607,16 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="26" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.09617613" vertical-offset="442" max-vertical-offset="1725">
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.08690614" vertical-offset="0" max-vertical-offset="863">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -639,6 +621,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/refresh.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="68" selection-end="68" vertical-scroll-proportion="0.034246575" vertical-offset="0" max-vertical-offset="876">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
@@ -648,7 +637,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="40" selection-start="6012" selection-end="6012" vertical-scroll-proportion="0.64004767" vertical-offset="1518" max-vertical-offset="2670">
+        <state line="122" column="20" selection-start="5359" selection-end="5359" vertical-scroll-proportion="-13.0" vertical-offset="1518" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="88" selection-start="882" selection-end="882" vertical-scroll-proportion="0.33024335" vertical-offset="0" max-vertical-offset="863">
           <folding />
         </state>
       </provider>
