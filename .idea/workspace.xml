@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/special/clients/mdo/images/img6.jpg" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/img6.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html" afterPath="$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html" />
     </list>
     <ignored path="keen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +24,17 @@
     <favorites_list name="keen" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="signup_thanks.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.15845071" vertical-offset="0" max-vertical-offset="852">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -46,7 +56,6 @@
         <option value="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" />
         <option value="$PROJECT_DIR$/static/special/clients/handlebar/site.html" />
         <option value="$PROJECT_DIR$/static/special/clients/handlebar/style.css" />
-        <option value="$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html" />
         <option value="$PROJECT_DIR$/keen/urls.py" />
         <option value="$PROJECT_DIR$/main/views/main.py" />
         <option value="$PROJECT_DIR$/main/vendors/mailchimp.py" />
@@ -58,12 +67,13 @@
         <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/main/views/home.py" />
+        <option value="$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1120" />
+    <option name="width" value="1488" />
     <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -566,8 +576,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1120" height="1024" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1488" height="1024" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -575,7 +585,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24953446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24767226" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18446602" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -652,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="48" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="877">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/admin/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="19" selection-start="279" selection-end="279" vertical-scroll-proportion="0.27809966" vertical-offset="0" max-vertical-offset="12615">
@@ -678,13 +681,6 @@
     <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="17" selection-start="495" selection-end="495" vertical-scroll-proportion="0.26071844" vertical-offset="0" max-vertical-offset="863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="20" selection-start="5359" selection-end="5359" vertical-scroll-proportion="0.37187126" vertical-offset="1518" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>
@@ -715,6 +711,20 @@
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="41" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.41946697" vertical-offset="223" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.35756853" vertical-offset="0" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.15845071" vertical-offset="0" max-vertical-offset="852">
           <folding />
         </state>
       </provider>
