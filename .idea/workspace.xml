@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="" />
+    <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/admin.py" afterPath="$PROJECT_DIR$/main/admin.py" />
+    </list>
     <ignored path="keen.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +34,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mchimp.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mchimp.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="21" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.46929318" vertical-offset="0" max-vertical-offset="863">
+            <state line="17" column="17" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="49" selection-start="851" selection-end="851" vertical-scroll-proportion="0.3938356" vertical-offset="0" max-vertical-offset="876">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +78,6 @@
         <option value="$PROJECT_DIR$/static/special/clients/handlebar/style.css" />
         <option value="$PROJECT_DIR$/templates/clients/mdo/signup_thanks.html" />
         <option value="$PROJECT_DIR$/keen/urls.py" />
-        <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/main/views/main.py" />
         <option value="$PROJECT_DIR$/main/vendors/mailchimp.py" />
         <option value="$PROJECT_DIR$/main/__init__.py" />
@@ -75,6 +87,7 @@
         <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
         <option value="$PROJECT_DIR$/main/vendors/mchimp.py" />
+        <option value="$PROJECT_DIR$/main/admin.py" />
       </list>
     </option>
   </component>
@@ -657,15 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="591" selection-end="591" vertical-scroll-proportion="0.2739726" vertical-offset="0" max-vertical-offset="876">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/refresh.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="21" selection-start="68" selection-end="68" vertical-scroll-proportion="0.034246575" vertical-offset="0" max-vertical-offset="876">
@@ -696,8 +700,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.46929318" vertical-offset="0" max-vertical-offset="863">
+        <state line="17" column="17" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="851" selection-end="851" vertical-scroll-proportion="0.3938356" vertical-offset="0" max-vertical-offset="876">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

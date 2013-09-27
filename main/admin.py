@@ -14,6 +14,11 @@ class CustomerSourceAdmin(admin.ModelAdmin):
     ordering = ['-date_added']
     list_display = ('client_name', 'name', "url")
 
+class PhoneNumberAdmin(admin.ModelAdmin):
+    ordering = ['-date_added']
+    list_display = ('number', 'type')
+
 admin.site.register(Customer, CustomerAdmin)
 admin.site.register(Client, ClientAdmin)
 admin.site.register(CustomerSource, CustomerSourceAdmin)
+admin.site.register(PhoneNumber, PhoneNumberAdmin)
