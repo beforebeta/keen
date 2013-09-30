@@ -10,6 +10,7 @@ def index(request):
     context = {}
     return render_to_response('index.html', context)
 
+
 class SignupForm(forms.Form):
     name    = forms.CharField(max_length=255)
     email   = forms.EmailField()

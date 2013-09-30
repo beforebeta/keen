@@ -27,3 +27,8 @@ urlpatterns += patterns('main.views.home',
 )
 
 
+#mdo special case
+urlpatterns += patterns('main.views.clients',
+    url(r'^handlebar/redeem/(?P<promo_code>[0-9A-Za-z]+)/$', 'handlebar_redeem'),
+    url(r'^handlebar/redeem/$', 'handlebar_redeem'),
+)
