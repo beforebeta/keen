@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/bg-container_old.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/sprite_purple2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/special/clients/mdo/images/bg-container.png" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/bg-container.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" afterPath="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/landing.css" afterPath="$PROJECT_DIR$/static/css/landing.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" afterPath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,7 +29,7 @@
       <file leaf-file-name="mdo_signup.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="48" selection-start="611" selection-end="611" vertical-scroll-proportion="0.17878427" vertical-offset="0" max-vertical-offset="2670">
+            <state line="149" column="87" selection-start="7034" selection-end="7034" vertical-scroll-proportion="0.48152563" vertical-offset="1831" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
@@ -83,8 +78,8 @@
         <option value="$PROJECT_DIR$/static/special/clients/handlebar/css/style.css" />
         <option value="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" />
         <option value="$PROJECT_DIR$/static/css/landing.css" />
-        <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
         <option value="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" />
+        <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
       </list>
     </option>
   </component>
@@ -659,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="611" selection-end="611" vertical-scroll-proportion="0.17878427" vertical-offset="0" max-vertical-offset="2670">
+        <state line="149" column="87" selection-start="7034" selection-end="7034" vertical-scroll-proportion="0.48152563" vertical-offset="1831" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>
