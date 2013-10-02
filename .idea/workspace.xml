@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" afterPath="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/bg-container_old.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/sprite_purple2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/special/clients/mdo/images/bg-container.png" afterPath="$PROJECT_DIR$/static/special/clients/mdo/images/bg-container.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" afterPath="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/landing.css" afterPath="$PROJECT_DIR$/static/css/landing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" afterPath="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="keen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,32 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="redeem.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/clients/handlebar/redeem.html">
+      <file leaf-file-name="mdo_signup.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="63" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.28605482" vertical-offset="465" max-vertical-offset="1905">
+            <state line="10" column="48" selection-start="611" selection-end="611" vertical-scroll-proportion="0.17878427" vertical-offset="0" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/keen/urls.py">
+      <file leaf-file-name="all.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/special/clients/mdo/css/all.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+            <state line="364" column="22" selection-start="11338" selection-end="11338" vertical-scroll-proportion="0.0" vertical-offset="5080" max-vertical-offset="7350">
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clients.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/views/clients.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#3813#5060#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,13 +69,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/special/clients/handlebar/style.css" />
-        <option value="$PROJECT_DIR$/main/views/main.py" />
         <option value="$PROJECT_DIR$/main/vendors/mailchimp.py" />
         <option value="$PROJECT_DIR$/main/__init__.py" />
         <option value="$PROJECT_DIR$/main/vendors/__init__.py" />
         <option value="$PROJECT_DIR$/keen/basesettings.py" />
-        <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
         <option value="$PROJECT_DIR$/main/vendors/mchimp.py" />
         <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/main/models.py" />
@@ -90,6 +82,9 @@
         <option value="$PROJECT_DIR$/main/views/clients.py" />
         <option value="$PROJECT_DIR$/static/special/clients/handlebar/css/style.css" />
         <option value="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" />
+        <option value="$PROJECT_DIR$/static/css/landing.css" />
+        <option value="$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html" />
+        <option value="$PROJECT_DIR$/static/special/clients/mdo/css/all.css" />
       </list>
     </option>
   </component>
@@ -210,118 +205,6 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="special" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="special" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handlebar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="special" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handlebar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="special" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handlebar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="keen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -399,10 +282,10 @@
       <recent name="$PROJECT_DIR$/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/special/clients/mdo/images" />
       <recent name="$PROJECT_DIR$/static/special/clients/handlebar/css/images" />
       <recent name="$PROJECT_DIR$/static/special/clients/handlebar" />
       <recent name="$PROJECT_DIR$/templates/clients/handlebar" />
-      <recent name="$PROJECT_DIR$/static/special/clients/mdo/images" />
       <recent name="$PROJECT_DIR$/static/special/clients/mdo" />
     </key>
   </component>
@@ -642,7 +525,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24953446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25512105" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37616387" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -669,38 +552,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../env/keen/lib/python2.7/site-packages/mailchimp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2028" column="45" selection-start="108272" selection-end="108282" vertical-scroll-proportion="0.33256084" vertical-offset="30133" max-vertical-offset="54885" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refresh.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="68" selection-end="68" vertical-scroll-proportion="0.034246575" vertical-offset="0" max-vertical-offset="876" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="279" selection-end="279" vertical-scroll-proportion="0.27809966" vertical-offset="0" max-vertical-offset="12615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.41095892" vertical-offset="0" max-vertical-offset="876" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keen/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="876" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keen/basesettings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="23" selection-start="629" selection-end="629" vertical-scroll-proportion="0.41714948" vertical-offset="0" max-vertical-offset="3135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="41" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.41946697" vertical-offset="223" max-vertical-offset="1725" />
@@ -725,38 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/views/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1565" selection-end="1752" vertical-scroll-proportion="0.7773973" vertical-offset="84" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="4" selection-start="7614" selection-end="7655" vertical-scroll-proportion="0.8569726" vertical-offset="1831" max-vertical-offset="2670">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keen/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/views/clients.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/special/clients/handlebar/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="48" selection-start="3818" selection-end="3818" vertical-scroll-proportion="0.50984937" vertical-offset="925" max-vertical-offset="2325">
@@ -766,7 +585,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/handlebar/redeem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="63" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.28605482" vertical-offset="465" max-vertical-offset="1905">
+        <state line="39" column="22" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.42908224" vertical-offset="225" max-vertical-offset="1905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keen/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.5308219" vertical-offset="0" max-vertical-offset="876">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/special/clients/mdo/images/bg-container_old.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/topbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="10" selection-start="483" selection-end="483" vertical-scroll-proportion="0.26408452" vertical-offset="0" max-vertical-offset="852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="483" selection-end="483" vertical-scroll-proportion="0.4112038" vertical-offset="0" max-vertical-offset="4245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/landing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="1" selection-start="787" selection-end="787" vertical-scroll-proportion="0.6061644" vertical-offset="174" max-vertical-offset="3030">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="60" selection-start="484" selection-end="484" vertical-scroll-proportion="0.19366197" vertical-offset="0" max-vertical-offset="852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/views/clients.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="0.4280822" vertical-offset="0" max-vertical-offset="876">
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/views/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="20" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.66743916" vertical-offset="84" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/special/clients/mdo/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="364" column="22" selection-start="11338" selection-end="11338" vertical-scroll-proportion="0.0" vertical-offset="5080" max-vertical-offset="7350">
+          <folding>
+            <element signature="e#3813#5060#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="48" selection-start="611" selection-end="611" vertical-scroll-proportion="0.17878427" vertical-offset="0" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>

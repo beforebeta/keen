@@ -43,7 +43,7 @@ img.center {
 #persons {
   margin-top: 10px;
   height: 280px;
-  background-image: url('/static/assets/people.jpg?d23370edbb2e');
+  background-image: url('/static/images/merchants.png');
   background-size: cover;
 }
 #blueline {
