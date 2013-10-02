@@ -29,7 +29,7 @@
       <file leaf-file-name="mdo_signup.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="87" selection-start="7034" selection-end="7034" vertical-scroll-proportion="0.48152563" vertical-offset="1831" max-vertical-offset="2670">
+            <state line="161" column="22" selection-start="7645" selection-end="7645" vertical-scroll-proportion="0.71394515" vertical-offset="1816" max-vertical-offset="2670">
               <folding />
             </state>
           </provider>
@@ -654,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="87" selection-start="7034" selection-end="7034" vertical-scroll-proportion="0.48152563" vertical-offset="1831" max-vertical-offset="2670">
+        <state line="161" column="22" selection-start="7645" selection-end="7645" vertical-scroll-proportion="0.71394515" vertical-offset="1816" max-vertical-offset="2670">
           <folding />
         </state>
       </provider>
