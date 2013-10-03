@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" afterPath="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="keen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +24,7 @@
     <favorites_list name="keen" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="redeem.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/clients/handlebar/redeem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="47" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.42789036" vertical-offset="1066" max-vertical-offset="1905">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1380815845000" expanded="true" signature="3940:4588" placeholder="..." />
-                <marker date="1380815845000" expanded="true" signature="3971:4436" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -106,7 +92,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,18 +216,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../env/keen/bin/python" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -351,7 +337,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="keen" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -377,27 +383,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="keen" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -495,14 +481,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24953446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24724603" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.250306" sideWeight="0.6706136" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -541,9 +527,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/vendors/mchimp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="24" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.46929318" vertical-offset="0" max-vertical-offset="863">
-          <folding />
-        </state>
+        <state line="29" column="24" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.46929318" vertical-offset="0" max-vertical-offset="863" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/views/__init__.py">
@@ -562,11 +546,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/keen/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.5308219" vertical-offset="0" max-vertical-offset="876">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="31" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.5308219" vertical-offset="0" max-vertical-offset="876" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/special/clients/mdo/images/bg-container_old.png">
@@ -576,9 +556,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/topbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="483" selection-end="483" vertical-scroll-proportion="0.26408452" vertical-offset="0" max-vertical-offset="852">
-          <folding />
-        </state>
+        <state line="15" column="10" selection-start="483" selection-end="483" vertical-scroll-proportion="0.26408452" vertical-offset="0" max-vertical-offset="852" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
@@ -590,9 +568,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/landing.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="1" selection-start="787" selection-end="787" vertical-scroll-proportion="0.6061644" vertical-offset="174" max-vertical-offset="3030">
-          <folding />
-        </state>
+        <state line="47" column="1" selection-start="787" selection-end="787" vertical-scroll-proportion="0.6061644" vertical-offset="174" max-vertical-offset="3030" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
@@ -611,11 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/special/clients/mdo/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="15" selection-start="7572" selection-end="7572" vertical-scroll-proportion="0.516129" vertical-offset="3528" max-vertical-offset="7350">
-          <folding>
-            <element signature="e#3813#5060#1" expanded="true" />
-          </folding>
-        </state>
+        <state line="264" column="15" selection-start="7572" selection-end="7572" vertical-scroll-proportion="0.516129" vertical-offset="3528" max-vertical-offset="7350" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/mdo/mdo_signup.html">
@@ -636,12 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/handlebar/redeem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="47" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.42789036" vertical-offset="1066" max-vertical-offset="1905">
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1380815845000" expanded="true" signature="3940:4588" placeholder="..." />
-            <marker date="1380815845000" expanded="true" signature="3971:4436" placeholder="..." />
-          </folding>
+        <state line="101" column="45" selection-start="5235" selection-end="5235" vertical-scroll-proportion="0.5351609" vertical-offset="1066" max-vertical-offset="1905">
+          <folding />
         </state>
       </provider>
     </entry>
