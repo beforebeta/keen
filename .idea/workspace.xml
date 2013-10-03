@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b0ca0f-ba9b-460d-a85f-3bbb0976f423" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views/clients.py" afterPath="$PROJECT_DIR$/main/views/clients.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" afterPath="$PROJECT_DIR$/templates/clients/handlebar/redeem.html" />
     </list>
     <ignored path="keen.iws" />
@@ -29,9 +28,11 @@
       <file leaf-file-name="redeem.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/clients/handlebar/redeem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="44" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.4648391" vertical-offset="225" max-vertical-offset="1905">
+            <state line="95" column="47" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.42789036" vertical-offset="1066" max-vertical-offset="1905">
               <folding>
                 <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1380815845000" expanded="true" signature="3940:4588" placeholder="..." />
+                <marker date="1380815845000" expanded="true" signature="3971:4436" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -635,9 +636,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/handlebar/redeem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="44" selection-start="2223" selection-end="2223" vertical-scroll-proportion="0.4648391" vertical-offset="225" max-vertical-offset="1905">
+        <state line="95" column="47" selection-start="5014" selection-end="5014" vertical-scroll-proportion="0.42789036" vertical-offset="1066" max-vertical-offset="1905">
           <folding>
             <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1380815845000" expanded="true" signature="3940:4588" placeholder="..." />
+            <marker date="1380815845000" expanded="true" signature="3971:4436" placeholder="..." />
           </folding>
         </state>
       </provider>
