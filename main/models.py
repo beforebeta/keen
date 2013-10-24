@@ -30,7 +30,7 @@ class PhoneNumber(models.Model):
 
 class CustomerManager(models.Manager):
 
-    def add_new_signup(self, client_name, source_name, name, email, dob, phone):
+    def add_new_signup(self, client_name, source_name, name, email, dob, phone, zip):
         try:
             first_name = ""
             last_name = ""
@@ -52,11 +52,13 @@ class CustomerManager(models.Manager):
             except:
                 print_stack_trace()
             new_customer = self.model(full_name=name,
-                       first_name=first_name,
-                       last_name=last_name,
-                       middle_name=middle_name,
-                       dob=date_of_birth,
-                       email=email)
+                                      first_name=first_name,
+                                      last_name=last_name,
+                                      middle_name=middle_name,
+                                      dob=date_of_birth,
+                                      email=email,
+                                      zip=zip,
+                                      )
             number = PhoneNumber(number=phone, type="Default")
             number.save()
 
@@ -93,6 +95,7 @@ class Customer(models.Model):
     dob             = models.DateField(blank=True, null=True)
     email           = models.CharField(max_length=255, blank=True, null=True)
     phone           = models.ManyToManyField(PhoneNumber, blank=True, null=True)
+    zip             = models.CharField(max_length=10, blank=True, null=True)
     source          = models.ForeignKey(CustomerSource, blank=True, null=True)
     description     = models.TextField(blank=True, null=True)
 

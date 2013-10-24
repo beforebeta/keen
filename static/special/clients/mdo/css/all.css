@@ -296,7 +296,7 @@ figure {margin:0; padding:0;}
 }
 .container .account-form input[type="text"],
 .container .account-form input[type="email"],
-.container .account-form .row input[type="tel"]{
+.account-form #phone {
 	margin:0;
 	font-size:15px;
 	float:left;
@@ -326,10 +326,8 @@ figure {margin:0; padding:0;}
 	clear:both;
 }
 .container .account-form .row+.row{margin:10px 0 0;}
-.container .account-form .col input[type="text"]{width:117px;}
-.container .account-form .row input[type="tel"]{
-	margin:0;
-	width:229px;
+.account-form #dob, .account-form #zip, .account-form #phone {
+	width: 111px;
 }
 .container .account-form .col{
 	float:left;
