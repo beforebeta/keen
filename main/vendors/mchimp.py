@@ -19,7 +19,9 @@ class Mailchimp():
                                         merge_vars={"FNAME":customer.first_name,
                                                     "LNAME":customer.last_name,
                                                     "FULNAME":customer.full_name,
-                                                    "NUMBER":customer.get_phone_number()},
+                                                    "NUMBER":customer.get_phone_number(),
+                                                    "ZIPCODE":customer.zip,
+                                                    },
                                         double_optin=False,
                                         update_existing=True,
                                         send_welcome=True)
