@@ -83,29 +83,32 @@
 						<p style="margin-top:14px;">Complete the information below and receive<br> A COUPON BOOK VALUED AT $750.</p>
 						<form class="account-form" action="/mdo/signup/" method="post">
                             {% csrf_token %}
+                            {% if list_id %}
+                            <input type="hidden" name="list_id" value="{{ list_id }}">
+                            {% endif %}
                             <fieldset>
 								<span class="required">*Required</span>
 								<div class="row">
-									<input type="text" placeholder="Name*" name="name">
+                  {{ form.name }}
 								</div>
 								<div class="row">
-									<input type="email" placeholder="Email*" name="email">
+                  {{ form.email }}
 								</div>
 								<div class="row">
 									<div class="col">
-										<input type="text" placeholder="Birthday" name="dob" id="dob">
+                    {{ form.dob }}
 									</div>
 									<div class="col">
-										<input type="text" placeholder="ZIP Code" name="zip" maxlength="10" id="zip">
+                    {{ form.zip }}
 									</div>
                   <div class="col">
-  									<input type="tel" placeholder="Phone" name="phone" id="phone">
+                    {{ form.phone }}
                   </div>
 								</div>
 								<input type="submit" value="submit">
 							</fieldset>
 						</form>
-						<p>We will email you a voucher shortly.<br>You can redeem it for your valuable coupon book at <br/>the Brooks Brothers outlet locations. </p>
+						<p>We will email you a voucher shortly.<br>You can redeem it for your valuable coupon book at <br/>the Brooks Brothers outlet location. </p>
 						<span class="notes">By submitting your information, you agree to receive<br>additional special offers and promotions from MDO.</span>
 					</div>
 					<div class="intro-box">
@@ -123,8 +126,6 @@
 						<form class="subscribe-form" action="#">
 							<fieldset>
 								<label for="sign">Sign up for our email newsletter to receive offers and discounts</label>
-{#								<input id="sign" type="email">#}
-{#								<input type="submit" value="Sign Up">#}
 							</fieldset>
 						</form>
 					</div>

@@ -1,90 +1,51 @@
-from django.db import models
-import datetime
-from main import print_stack_trace
+import logging
+from datetime import timedelta
+from uuid import uuid4
+
+from django.db import models, DatabaseError
+from django.utils.timezone import now
+
+
+logger = logging.getLogger(__name__)
 
 
 class Client(models.Model):
     unique_id       = models.CharField(max_length=255, db_index=True)
     name            = models.CharField(max_length=255, db_index=True)
 
-    date_added      = models.DateTimeField(default=datetime.datetime.now(), auto_now_add=True)
-    last_modified   = models.DateTimeField(default=datetime.datetime.now(), auto_now=True, auto_now_add=True)
+    date_added      = models.DateTimeField(default=now, auto_now_add=True)
+    last_modified   = models.DateTimeField(default=now, auto_now=True, auto_now_add=True)
+
+
+class Visitor(models.Model):
+
+    first_visit = models.DateTimeField(default=now)
+    visits = models.PositiveSmallIntegerField(default=0)
+    last_visit = models.DateTimeField()
+    source = models.CharField(max_length=255)
+    medium = models.CharField(max_length=255)
+    campaign = models.CharField(max_length=255)
+    keywords = models.CharField(max_length=255)
+
 
 class CustomerSource(models.Model):
     client  = models.ForeignKey(Client, blank=True, null=True)
     name    = models.CharField(max_length=255, db_index=True)
     url     = models.TextField(blank=True, null=True)
 
-    date_added      = models.DateTimeField(default=datetime.datetime.now(), auto_now_add=True)
-    last_modified   = models.DateTimeField(default=datetime.datetime.now(), auto_now=True, auto_now_add=True)
+    date_added      = models.DateTimeField(default=now, auto_now_add=True)
+    last_modified   = models.DateTimeField(default=now, auto_now=True, auto_now_add=True)
 
     def client_name(self):
         return self.client.name
+
 
 class PhoneNumber(models.Model):
     number          = models.CharField(max_length=255, blank=True, null=True)
     type            = models.CharField(max_length=10, blank=True, null=True)
 
-    date_added      = models.DateTimeField(default=datetime.datetime.now(), auto_now_add=True)
-    last_modified   = models.DateTimeField(default=datetime.datetime.now(), auto_now=True, auto_now_add=True)
-
-class CustomerManager(models.Manager):
-
-    def add_new_signup(self, client_name, source_name, name, email, dob, phone, zip):
-        try:
-            first_name = ""
-            last_name = ""
-            middle_name = ""
-            date_of_birth=None
-            try:
-                if " " in name:
-                    split = name.split(" ")
-                    first_name = split[0]
-                    last_name = split[-1]
-                    if len(split) > 2:
-                        middle_name = " ".join(split[1:-1])
-                else:
-                    first_name=name
-                #date_of_birth = datetime.datetime.strptime(dob, '%m/%d/%Y')
-                print "date of birth", dob
-                if dob:
-                    date_of_birth = dob
-            except:
-                print_stack_trace()
-            new_customer = self.model(full_name=name,
-                                      first_name=first_name,
-                                      last_name=last_name,
-                                      middle_name=middle_name,
-                                      dob=date_of_birth,
-                                      email=email,
-                                      zip=zip,
-                                      )
-            number = PhoneNumber(number=phone, type="Default")
-            number.save()
-
-            client = None
-            try:
-                client = Client.objects.get(unique_id = client_name)
-            except:
-                client = Client(unique_id = client_name, name= client_name)
-                client.save()
-
-            source = None
-            try:
-                source = CustomerSource.objects.get(client=client, name=source_name)
-            except:
-                source = CustomerSource(client=client, name=source_name)
-                source.save()
-
-            new_customer.source = source
-
-            new_customer.save()
-            new_customer.phone.add(number)
-            new_customer.save()
-            return new_customer
-        except:
-            print_stack_trace()
-            return None
+    date_added      = models.DateTimeField(default=now, auto_now_add=True)
+    last_modified   = models.DateTimeField(default=now, auto_now=True, auto_now_add=True)
 
 
 class Customer(models.Model):
@@ -98,11 +59,10 @@ class Customer(models.Model):
     zip             = models.CharField(max_length=10, blank=True, null=True)
     source          = models.ForeignKey(CustomerSource, blank=True, null=True)
     description     = models.TextField(blank=True, null=True)
+    visitor         = models.ForeignKey(Visitor, null=True)
 
-    objects         = CustomerManager()
-
-    date_added      = models.DateTimeField(default=datetime.datetime.now(), auto_now_add=True)
-    last_modified   = models.DateTimeField(default=datetime.datetime.now(), auto_now=True, auto_now_add=True)
+    date_added      = models.DateTimeField(default=now, auto_now_add=True)
+    last_modified   = models.DateTimeField(default=now, auto_now=True, auto_now_add=True)
 
     def source_client_name(self):
         return self.source.client.name
