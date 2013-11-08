@@ -192,6 +192,10 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
+        '': {
+            'handlers': ['console'],
+            'level': 'ERROR',
+        },
     }
 }
 
@@ -202,3 +206,14 @@ MAILCHIMP_API_KEY = "4f1edbb00b9d47197be82bb7007c1b6d-us7"
 
 #CLIENT SPECIFIC
 MDO_MAILCHIMP_LIST_ID = "f137682258"
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+AWS_QUERYSTRING_AUTH = False
+AWS_S3_SECURE_URLS = False
+AWS_REDUCED_REDUNDANCY = True
+AWS_STORAGE_BUCKET_NAME = 'keensmb'
+AWS_ACCESS_KEY_ID = 'AKIAISPVNQL76YJWH4WQ'
+AWS_SECRET_ACCESS_KEY = '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'
+
+
