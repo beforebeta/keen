@@ -59,7 +59,7 @@ class Customer(models.Model):
     zip             = models.CharField(max_length=10, blank=True, null=True)
     source          = models.ForeignKey(CustomerSource, blank=True, null=True)
     description     = models.TextField(blank=True, null=True)
-    visitor         = models.ForeignKey(Visitor, null=True)
+    visitor         = models.ForeignKey(Visitor, null=True, related_name='customer')
 
     date_added      = models.DateTimeField(default=now, auto_now_add=True)
     last_modified   = models.DateTimeField(default=now, auto_now=True, auto_now_add=True)

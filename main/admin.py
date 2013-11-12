@@ -4,7 +4,7 @@ from main.models import Client, CustomerSource, PhoneNumber, Customer, Visitor
 
 class CustomerAdmin(admin.ModelAdmin):
     ordering = ['-date_added']
-    list_display = ('full_name', 'dob','email','source_client_name')
+    list_display = ('full_name', 'dob','email','source_client_name', 'visitor')
     search_fields = ['full_name',"dob", "email", "phone__number"]
 
 
