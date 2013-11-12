@@ -10,7 +10,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.contrib.localflavor.us.forms import USZipCodeField
 
-from main.models import Visitor, Client, Customer, PhoneNumber
+from main.models import Visitor, Customer, PhoneNumber, CustomerSource
 from main.vendors.mchimp import Mailchimp
 
 
@@ -62,8 +62,8 @@ def mdo_signup(request):
             customer.dob = form.cleaned_data['dob'] if form.cleaned_data['dob'] else None
             customer.zip = form.cleaned_data['zip']
 
-            # FIXME: client name should not be hadrcoded!!!
-            customer.client = Client.objects.get(name='mdo')
+            # FIXME: client/source should not be hadrcoded!!!
+            customer.source = CustomerSource.objects.get(name='signup', client__name='mdo')
 
             customer.visitor = get_visitor(request)
 
