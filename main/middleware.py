@@ -38,7 +38,7 @@ def get_visitor(request):
     cookie = request.COOKIES.get('__utma')
     if cookie:
         try:
-            first_visit, last_visit, current_visit, visits = map(int, cookie.split('.', 5)[2, 6])
+            first_visit, last_visit, current_visit, visits = map(int, cookie.split('.', 5)[2:6])
             first_visit, last_visit = map(datetime.fromtimestamp, (first_visit, last_visit))
         except (ValueError, IndexError):
             logger.error('Failed to extrect tracking information from GA cookie {0!r}'.format(
