@@ -64,10 +64,10 @@ def get_visitor(request):
         except (ValueError, IndexError):
             logger.error('Malformed GA cookie: {0!r}'.format(cookie))
         else:
-            visitor.source = data.get('utmcsr')
-            visitor.medium = data.get('utmcmd')
-            visitor.campaign = data.get('utmccn')
-            visitor.keywords = data.get('utm.ctr')
+            visitor.source = normalize_ga_value(data.get('utmcsr'))
+            visitor.medium = normalize_ga_value(data.get('utmcmd'))
+            visitor.campaign = normalize_ga_value(data.get('utmccn'))
+            visitor.keywords = normalize_ga_value(data.get('utm.ctr'))
 
     for param, attr in (
         ('utm_source', 'source'),
@@ -79,3 +79,11 @@ def get_visitor(request):
             setattr(visitor, attr, request.GET.get(param, 'direct'))
 
     return visitor
+
+
+def normalize_ga_value(value):
+    return {
+        '(direct)': 'direct',
+        '(none)': None,
+        '(notset)': None,
+    }.get(value, value)
