@@ -63,9 +63,22 @@ def mdo_signup(request):
             customer.zip = form.cleaned_data['zip']
 
             # FIXME: client/source should not be hadrcoded!!!
-            customer.source = CustomerSource.objects.get(name='signup', client__name='mdo')
+            client_name = 'mdo'
+            source_name = 'signup'
+            try:
+                customer.source = CustomerSource.objects.get(
+                    name=source_name, client__name=client_name)
+            except CustomerSource.DoesNotExist:
+                logger.error('Customer source {}:{} cannot be found'.format(
+                    client_name, source_name))
 
-            customer.visitor = get_visitor(request)
+            if 'visitor' in request.session:
+                try:
+                    customer.visitor = Visitor.objects.get(uuid=request.session['visitor'])
+                except Visitor.DoesNotExist:
+                    logger.warn('Session with non-existent visitor UUID')
+            else:
+                logging.warn('Session without visitor UUID')
 
             phone_number = form.cleaned_data['phone']
 
@@ -98,49 +111,3 @@ def mdo_signup(request):
         'form': form,
         'list_id': mailchimp_id,
     })
-
-
-def get_visitor(request):
-    """Extract visitor tracking information from Google Analytics cookie and
-    use that to create Visitor object.
-    """
-    visitor = Visitor()
-
-    # first extract visits information
-    cookie = request.COOKIES.get('__utma')
-    if cookie:
-        try:
-            first_visit, last_visit, current_visit, visits = map(int, cookie.split('.', 5)[2, 6])
-            first_visit, last_visit = map(datetime.fromtimestamp, (first_visit, last_visit))
-        except (ValueError, IndexError):
-            logger.error('Failed to extrect tracking information from GA cookie {0!r}'.format(
-                cookie))
-            current_timestamp = now()
-            visitor.first_visit = current_timestamp
-            visitor.last_visit = current_timestamp
-            visitor.visits = 1
-        else:
-            visitor.first_visit = first_visit
-            visitor.last_visit = last_visit
-            visitor.visits = visits
-
-    # then we try to get source
-    cookie = request.COOKIES.get('__utmz')
-    if cookie:
-        try:
-            data = cookie.split('.', 4)[-1]
-            data = dict(match.groups() for match in re.finditer(
-                r'(utm(?:csr|cnn|cmd|ctr))=([^\|]*)', data))
-        except (ValueError, IndexError):
-            logger.error('Malformed GA cookie: {0!r}'.format(cookie))
-        else:
-            visitor.source = data.get('utmcsr')
-            visitor.medium = data.get('utmcmd')
-            visitor.campaign = data.get('utmccn')
-            visitor.keywords = data.get('utm.ctr')
-            try:
-                visitor.save()
-            except DatabaseError:
-                logger.exception('Failed to save visitor')
-            else:
-                return visitor

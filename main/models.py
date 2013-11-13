@@ -19,6 +19,10 @@ class Client(models.Model):
 
 class Visitor(models.Model):
 
+    uuid = models.CharField(max_length=36, unique=True, db_index=True)
+    ip_address = models.IPAddressField()
+    referrer = models.CharField(max_length=255)
+    user_agent = models.CharField(max_length=255)
     first_visit = models.DateTimeField(default=now)
     visits = models.PositiveSmallIntegerField(default=0)
     last_visit = models.DateTimeField()

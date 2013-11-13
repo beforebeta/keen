@@ -11,6 +11,10 @@ class Migration(SchemaMigration):
         # Adding model 'Visitor'
         db.create_table(u'main_visitor', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('uuid', self.gf('django.db.models.fields.CharField')(unique=True, max_length=36, db_index=True)),
+            ('ip_address', self.gf('django.db.models.fields.IPAddressField')(max_length=15)),
+            ('referrer', self.gf('django.db.models.fields.CharField')(max_length=255)),
+            ('user_agent', self.gf('django.db.models.fields.CharField')(max_length=255)),
             ('first_visit', self.gf('django.db.models.fields.DateTimeField')(default=datetime.datetime.now)),
             ('visits', self.gf('django.db.models.fields.PositiveSmallIntegerField')(default=0)),
             ('last_visit', self.gf('django.db.models.fields.DateTimeField')()),
@@ -23,7 +27,7 @@ class Migration(SchemaMigration):
 
         # Adding field 'Customer.visitor'
         db.add_column(u'main_customer', 'visitor',
-                      self.gf('django.db.models.fields.related.ForeignKey')(to=orm['main.Visitor'], null=True),
+                      self.gf('django.db.models.fields.related.ForeignKey')(related_name='customer', null=True, to=orm['main.Visitor']),
                       keep_default=False)
 
 
@@ -58,7 +62,7 @@ class Migration(SchemaMigration):
             'middle_name': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'}),
             'phone': ('django.db.models.fields.related.ManyToManyField', [], {'symmetrical': 'False', 'to': u"orm['main.PhoneNumber']", 'null': 'True', 'blank': 'True'}),
             'source': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['main.CustomerSource']", 'null': 'True', 'blank': 'True'}),
-            'visitor': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['main.Visitor']", 'null': 'True'}),
+            'visitor': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'customer'", 'null': 'True', 'to': u"orm['main.Visitor']"}),
             'zip': ('django.db.models.fields.CharField', [], {'max_length': '10', 'null': 'True', 'blank': 'True'})
         },
         u'main.customersource': {
@@ -83,10 +87,14 @@ class Migration(SchemaMigration):
             'campaign': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
             'first_visit': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime.now'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'ip_address': ('django.db.models.fields.IPAddressField', [], {'max_length': '15'}),
             'keywords': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
             'last_visit': ('django.db.models.fields.DateTimeField', [], {}),
             'medium': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
+            'referrer': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
             'source': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
+            'user_agent': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
+            'uuid': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '36', 'db_index': 'True'}),
             'visits': ('django.db.models.fields.PositiveSmallIntegerField', [], {'default': '0'})
         }
     }
