@@ -22,7 +22,7 @@ urlpatterns = patterns('',
 )
 
 #mdo special case
-urlpatterns += patterns('main.views.home',
+urlpatterns += patterns('main.views.customers',
     url(r'^mdo/signup/$', 'mdo_signup'),
 )
 

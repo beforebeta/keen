@@ -1,7 +1,9 @@
-from django.shortcuts import render_to_response
-from django.template import RequestContext
+from django.shortcuts import render
+
+from main.views.utils import expect_visitor
 
 
+@expect_visitor
 def handlebar_redeem(request, promo_code=None):
     context = {
         "promo_img"             : "",
@@ -18,8 +20,4 @@ def handlebar_redeem(request, promo_code=None):
         context["promo_img"] = "cake2.png"
         context["promo_title"] = "30% OFF"
         context["promo_restriction"] = "Offer valid till Sunday 10/6/2013"
-    return render_to_response(
-                'clients/handlebar/redeem.html',
-                context,
-                context_instance=RequestContext(request)
-    )
+    return render(request, 'clients/handlebar/redeem.html', context)
