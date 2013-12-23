@@ -22,8 +22,8 @@ urlpatterns = patterns('',
 )
 
 #mdo special case
-urlpatterns += patterns('main.views.home',
-    url(r'^mdo/signup/$', 'mdo_signup'),
+urlpatterns += patterns('main.views.customers',
+    url(r'^(?P<client>[a-z]+)/signup/$', 'signup'),
 )
 
 

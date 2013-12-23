@@ -1,0 +1,149 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Napoli Motors</title>
+  <link rel="stylesheet" type="text/css" href="{% static "special/clients/napoli/css/bootstrap.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "special/clients/napoli/css/napoli.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "special/clients/napoli/css/napoli1.css" %}">
+    <!--<link rel="stylesheet" href="css/jquery-ui.css" />-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="{% static "special/clients/napoli/css/style.css" %}">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="{% static "special/clients/napoli/js/html5shiv.js" %}"></script>
+    <![endif]-->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a class="logo" href="#">
+				<img src="{% static "special/clients/napoli/images/logo.png" %}" alt="logo">
+			</a>
+		</div>
+	</header>
+	<section>
+		<div class="header-title">
+			<div class="container">If Your Car Doesn`t Say Napoli On It You Pay To Much!</div>
+		</div>
+		<div class="container">
+			<article class="map">
+				<div class="contact-form">
+					<h1>Holiday Cash Offer!</h1>
+					<p>Receive A $5 Wal-Mart Gift Card With Any Used Car Purchased Niw Trough December 31st, 2013</p>
+					<span>Claim your gift card now!</span>
+					<form action="" role="form" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="list_id" value="{% firstof list_id "d490999a40" %}">
+					  <div class="form-group">
+					    <label class="sr-only" for="Name">Name</label>
+					    <input type="text" name="name" class="form-control" id="Name" placeholder="Name *">
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="Email">Email address</label>
+					    <input type="email" name="email" class="form-control" id="Eail" placeholder="Email *">
+					  </div>
+					  <div class="form-group inline-block">
+					  	<div class="sm-input-block">
+					  		<label class="sr-only" for="datepicker">Birthday</label>
+					  		<input type="text" name="dob" class="form-control" id="datepicker" placeholder="Birthday">
+					  	</div>
+					  	<div class="sm-input-block">
+					  		<label class="sr-only" for="zip-code">Zip Code</label>
+					  		<input type="text" name="zip" class="form-control" id="zip-code" placeholder="Zip Code *">
+					  	</div>
+					  	<div class="sm-input-block">
+					  		<label class="sr-only" for="phone">Phone</label>
+					  		<input type="text" name="phone" class="form-control" id="phone" placeholder="Phone">
+					  	</div>
+					  </div>
+					  <button type="submit" class="btn confirm-btn pull-right">Claim My Gift Card</button>
+					</form>
+				</div>
+
+				<div class="contact-info">
+					<div class="left-info pull-left">
+						<strong>Napoli Indor Auto Outlet</strong>
+						<span>241 Boston Post Rd</span>
+						<span>Milford, CT 06460</span>
+						<a href="#" class="btn confirm-btn">See Our Inventary</a>
+					</div>
+					<div class="right-info pull-left">
+						<span class="pull-left">
+							<a href="#" class="direction">Direction</a>
+							<a href="#" class="save">Save</a>
+						</span>
+						<a href="http://napolimotors.com/">napolimotors.com</a>
+						<em>(203) 783-58-50</em>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+	<footer>
+		<div class="bottom-top"></div>
+		<div id="rt-bottom">
+			<div class="rt-container">
+				<div class="rt-grid-12 rt-alpha rt-omega">
+					<div class="rt-block">
+						<div class="module-title">
+							<h2 class="title">Quick Links</h2>
+						</div>
+						<div class="module-content-r">
+							<div class="module-content-l">
+								<ul class="menu"><li class="active item12"><a href="http://napolimotors.com/"><span>Home</span></a></li><li class="item26"><a href="http://napolimotors.com/new-nissan-inventory"><span>New Nissan Inventory</span></a></li><li class="item27"><a href="http://napolimotors.com/new-suzuki-inventory"><span>New Suzuki Inventory</span></a></li><li class="item14"><a href="http://napolimotors.com/pre-owned"><span>Pre-Owned</span></a></li><li class="item15"><a href="http://napolimotors.com/get-pre-approved"><span>Financing</span></a></li><li class="item23"><a href="http://napolimotors.com/value-your-trade"><span>Value Your Trade</span></a></li><li class="item29"><a href="http://napolimotors.com/testimonials"><span>Testimonials</span></a></li><li class="item30"><a href="http://napolimotors.com/napoli-classics"><span>Napoli Classics</span></a></li><li class="item31"><a href="http://napolimotors.com/napoli-nissan-preowned"><span>Napoli Nissan Pre-Owned</span></a></li><li class="item32"><a href="http://napolimotors.com/napoli-indoor-outlet"><span>Napoli Indoor Outlet</span></a></li></ul></div>
+						</div>
+						<div class="module-bottom-r">
+							<div class="module-bottom-l"></div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="rt-copyright">
+			<div class="rt-container">
+			<div class="rt-grid-12 rt-alpha rt-omega">
+			<div class="rt-block">
+			Copyright © Napoli Motors 2013 All Righs Reserved</div>
+			<div class="totop">
+			<div class="rt-block">
+			<a href="#" id="gantry-totop" style="outline: none;">Back To Top</a>
+			</div>
+			</div>
+			<div class="rt-block">
+			<div class="module-content-r">
+			<div class="module-content-l">
+			<ul class="menu"><li class="item6"><a href="http://napolimotors.com/privacy-policy"><span>Privacy Policy</span></a></li><li class="item7"><a href="http://napolimotors.com/terms-of-use"><span>Terms of Use</span></a></li><li class="item10"><a href="http://napolimotors.com/sitemap"><span>Site Map</span></a></li><li class="item16"><a href="http://napolimotors.com/disclaimer"><span>Disclaimer</span></a></li><li class="item8"><a href="http://napolimotors.com/inventory-site-map"><span>Inventory Site Map</span></a></li></ul>                </div>
+			</div>
+			<div class="module-bottom-r">
+			<div class="module-bottom-l"></div>
+			</div>
+			</div>
+			<div class="im-logo">
+			<div class="rt-block">
+			<div class="module-content-r">
+			<div class="module-content-l">
+			<a href="http://inventorymarketing.com/" target="_blank" style="float: right;" rel="nofollow"><img src="{% static "special/clients/napoli/images/im-logo-dark.png" %}" alt="Powered by Inventory Marketing" style="float: right; margin-top: 15px;" width="240" height="33"></a>                </div>
+			</div>
+			<div class="module-bottom-r">
+			<div class="module-bottom-l"></div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div class="clear"></div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="{% static "special/clients/napoli/js/jquery.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "special/clients/napoli/js/jquery-ui.js" %}"></script>
+	<script>
+	  $(function() {
+	    $( "#datepicker" ).datepicker();
+	  });
+	</script>
+</body>
+</html>
