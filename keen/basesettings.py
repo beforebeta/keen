@@ -10,9 +10,6 @@ def bool_env(val):
     except:
         return False
 
-DEBUG = bool_env('DEBUG')
-TEMPLATE_DEBUG = DEBUG
-
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -109,6 +106,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'main.middleware.VisitorMiddleware',
 )
 
 ROOT_URLCONF = 'keen.urls'
@@ -169,43 +167,21 @@ INSTALLED_APPS = (
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'filters': {
-        'require_debug_false': {
-            '()': 'django.utils.log.RequireDebugFalse'
-        }
-    },
-
     'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'filters': ['require_debug_false'],
-            'class': 'django.utils.log.AdminEmailHandler'
-        },
-     'console':{
+        'console':{
             'level': 'DEBUG',
             'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
-        'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
         '': {
             'handlers': ['console'],
-            'level': 'ERROR',
+            'level': 'DEBUG',
         },
     }
 }
 
-APPEND_SLASH=True
-
 MAILCHIMP_API_KEY = "4f1edbb00b9d47197be82bb7007c1b6d-us7"
-
-
-#CLIENT SPECIFIC
-MDO_MAILCHIMP_LIST_ID = "d062c89349"
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
