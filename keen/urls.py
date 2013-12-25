@@ -21,13 +21,10 @@ urlpatterns = patterns('',
     (r'^legal$', TemplateView.as_view(template_name='legal.html')),
 )
 
-#mdo special case
 urlpatterns += patterns('main.views.customers',
     url(r'^(?P<client>[a-z]+)/signup/$', 'signup'),
 )
 
-
-#mdo special case
 urlpatterns += patterns('main.views.clients',
     url(r'^handlebar/redeem/(?P<promo_code>[0-9A-Za-z]+)/$', 'handlebar_redeem'),
     url(r'^handlebar/redeem/$', 'handlebar_redeem'),

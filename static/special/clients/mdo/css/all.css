@@ -254,7 +254,7 @@ figure {margin:0; padding:0;}
 	text-align:center;
 }
 .info-box{
-	background:url(../images/mauve_pixel.png);
+	background:url(../images/red_pixel.png);
 	font-size:15px;
 	line-height:18px;
 	margin:0 0 96px;
@@ -266,7 +266,7 @@ figure {margin:0; padding:0;}
 	position:absolute;
 	top:100%;
 	left:0;
-	background:url(../images/sprite_purple5.png) no-repeat 0 -82px;
+	background:url(../images/sprite_with-red.png) no-repeat 0 -82px;
 	width:430px;
 	height:96px;
 }
@@ -365,6 +365,7 @@ figure {margin:0; padding:0;}
 }
 .container .intro-box p{margin:0 0 20px;}
 .text-holder{
+	color: #D43037;
 	position:relative;
 	z-index:10;
 	margin:-49px 0 0;
